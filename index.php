@@ -9,6 +9,9 @@ $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
     curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
+    $result = $num1 + $num2;
+    echo "Result: $result";
+
     $res = curl_exec($ch);
     if(curl_error($ch)){
         var_dump(curl_error($ch));{
