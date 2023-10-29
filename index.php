@@ -19,7 +19,6 @@ $ch = curl_init();
         return json_decode($res);
     }
 }
-//=======================================================//
 #variables
 $update = json_decode(file_get_contents("php://input"));
 $message = $update->message;
