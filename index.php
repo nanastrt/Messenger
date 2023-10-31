@@ -49,6 +49,15 @@ function SendMessage($chat_id,$text,$keyboard){
 	'chat_id'=>$chat_id,
 	'text'=>$text,
 	'reply_markup'=>$keyboard]);
+	$currentDate = date('Y-m-d H:i:s'); // Current date and time in a specific format
+$timestamp = time(); // Current Unix timestamp
+
+	
+	$start = new DateTime('2023-10-31');
+$end = new DateTime('2023-11-05');
+$interval = $start->diff($end);
+echo $interval->format('%R%a days');
+
 }
 function edit($chat_id,$meesage_id,$text,$reply_markup){
 	bot('editMessageText',[
