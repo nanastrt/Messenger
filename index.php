@@ -29,7 +29,6 @@ $message_id = $update->message->message_id;
 $username = $update->callback_query->from->username;
 $username2 = $update->message->from->username;
 $data = $update->callback_query->data;
-$chatid = $update->callback_query->message->chat->id;
 $messageid = $update->callback_query->message->message_id;
 $forward_username = $update->message->forward_from_chat->username;
 $NCS = $update->message->reply_to_message->forward_from->id;
