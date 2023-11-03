@@ -1,7 +1,6 @@
 <?php
 #define
 define('API_KEY','TOKEN'); //توکن
-//===============================================
 #function
 function bot($method,$datas=[]){
     $url = 'https://api.telegram.org/bot'.API_KEY.'/'.$method;
@@ -41,7 +40,6 @@ $first = $update->callback_query->from->first_name;
 $last_name = $update->callback_query->from->last_name;
 $admin = "484616919"; //ادمین
 $host = "Lord_Support";
-//=======================================================//
 #functions
 function SendMessage($chat_id,$text,$keyboard){
 	bot('SendMessage',[
