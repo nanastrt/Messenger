@@ -1,6 +1,6 @@
 <?php
 #define
-define('API_KEY','TOKEN'); //توکن
+define('API_KEY','TOKEN'); //
 #function
 function bot($method,$datas=[]){
     $url = 'https://api.telegram.org/bot'.API_KEY.'/'.$method;
