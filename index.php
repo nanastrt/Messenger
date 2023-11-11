@@ -78,7 +78,6 @@ function ForwardMessage($chatid,$from_chat,$message_id){
 if(strpos($ban,"$chat_id") !== false && $chat_id != $admin){
 	bot('SendMessage',[
 	'chat_id'=>$chat_id,
-	'text'=>"شما کاربر عزیز توسط ادمین از ربات بلاک شدید."]);
 	return false;
 }
 elseif(strpos($ban,"$chat_id") !== false && $chatid != $admin){
