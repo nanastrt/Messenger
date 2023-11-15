@@ -23,6 +23,22 @@ $update = json_decode(file_get_contents("php://input"));
 $message = $update->message;
 $text = $update->message->text;
 $chat_id = $update->message->chat->id;
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$document_path = 'path/to/your/document.pdf';
+
+file_get_contents("https://api.telegram.org/bot$token/sendDocument?chat_id=$chat_id&document=" . urlencode($document_path));
+?>
+
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id&video=" . urlencode($video_path));
+?>
+
 $from_id = $update->message->from->id
 $message_id = $update->message->message_id;
 $username = $update->callback_query->from->username;
