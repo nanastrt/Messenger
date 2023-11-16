@@ -42,7 +42,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id
 $from_id = $update->message->from->id
 $message_id = $update->message->message_id;
 $username = $update->callback_query->from->username;
-$username2 = $update->message->from->username;
 $data = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $forward_username = $update->message->forward_from_chat->username;
