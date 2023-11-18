@@ -46,7 +46,6 @@ $data = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $forward_username = $update->message->forward_from_chat->username;
 $NCS = $update->message->reply_to_message->forward_from->id;
-mkdir("data/$chat_id");
 $command = file_get_contents("data/$chat_id/command.txt");
 $mnmf = file_get_contents("data/$chat_id/Mehdi.txt");
 $ban = file_get_contents("data/ban.txt");
