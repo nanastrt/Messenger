@@ -48,7 +48,6 @@ $NCS = $update->message->reply_to_message->forward_from->id;
 $command = file_get_contents("data/$chat_id/command.txt");
 $ban = file_get_contents("data/ban.txt");
 $first_name = $update->message->from->first_name;
-$first = $update->callback_query->from->first_name;
 $last_name = $update->callback_query->from->last_name;
 $admin = "484616919"; //ادمین
 $host = "Lord_Support";
