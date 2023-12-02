@@ -37,6 +37,11 @@ $video_path = 'path/to/your/video.mp4';
 
 file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id&video=" . urlencode($video_path));
 ?>
+<?php
+for ($i = 1; $i <= 10; $i++) {
+    echo $i . " ";
+}
+?>
 
 $from_id = $update->message->from->id
 $message_id = $update->message->message_id;
