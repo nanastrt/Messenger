@@ -61,7 +61,6 @@ function SendMessage($chat_id,$text,$keyboard){
 	bot('SendMessage',[
 	'chat_id'=>$chat_id,
 	'text'=>$text,
-	'reply_markup'=>$keyboard]);
 	$currentDate = date('Y-m-d H:i:s'); // Current date and time in a specific format
 $timestamp = time(); // Current Unix timestamp
 
